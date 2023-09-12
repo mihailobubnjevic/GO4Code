@@ -1,0 +1,6 @@
+Na linku https://github.com/dotnet/try-samples#basics mozete pronaci primere za vezbu LINQ-a u browseru.
+Ispratite instrukcije za instalaciju, potrebno je instalirati dotnet-try paket i zatim klonirati repozitorijum sa linka.
+Nakon toga potrebno je da se preko terminala pozicionirate na folder u koji ste klonirali repozitorijum (u root folder repozitorijuma, gde se nalaze redom folderi "101-linq-samples", "Beginner" itd.
+Zatim uspomoc funkcije dotnet try pokrenucete aplikaciju i otvorice vam se browser - odatle treba da pronadjete link "101 LINQ samples".
+Pri dnu stranice stoji "If you loaded this page from dotnet try, click here to start the sample. (This link will not work in the samples browser).", treba da kliknete na "here" i otvorice vam meni koji
+sadrzi teme koje pokrivaju sve funkcionalnosti LINQ-a. 
