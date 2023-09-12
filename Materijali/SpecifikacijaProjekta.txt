@@ -1,4 +1,9 @@
 Projekat je zamišljen kao društvena mreža koja omogućava korisnicima da dele tekstualne objave. Korisnici mogu da prate druge korisnike.
-Svaki korisnik može da vidi svoje objave i objave korisnika koje prati. Korisnik može da ostavlja komentare na objavama, takođe može da 'lajkuje' objavu. Broj 'lajkova' i komentara, kao i sami komentari, su vidljivi svim korisnicima koji vide objavu. 
+Svaki korisnik može da vidi svoje objave i objave korisnika koje prati.
+Korisnik može da ostavlja komentare na objavama, takođe može da 'lajkuje' objavu. 
+Broj 'lajkova' i komentara, kao i sami komentari, su vidljivi svim korisnicima koji vide objavu. 
 
-Današnji zadatak je da kreirate ASP.NET Core API aplikaciju, zatim da podesite bazu podataka i povežete je sa vašom aplikacijom. Potrebno je kreirati modele koji predstavljaju entitete po uzoru na datu specifikaciju projekta. Putem Entity Framework-a generisati tabele u bazi. Na kraju potrebno je implementirati repozitorijume za svaki od modela sa CRUD operacijama.
+Današnji zadatak je da kreirate ASP.NET Core API aplikaciju, zatim da podesite bazu podataka i povežete je sa vašom aplikacijom. 
+Potrebno je kreirati modele koji predstavljaju entitete po uzoru na datu specifikaciju projekta. 
+Putem Entity Framework-a generisati tabele u bazi. 
+Na kraju potrebno je implementirati repozitorijume za svaki od modela sa CRUD operacijama.
