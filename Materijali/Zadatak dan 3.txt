@@ -1,0 +1,1 @@
+Danasnji zadatak je da prosirite svoju aplikaciju tako da prati troslojnu arhitekturu - Presentation, Business Logic i Data layer. Dodati Controllere i Servise za sve potrebne funkcionalnost i povezati sa postojecim repozitorijumima kako biste imali kompletan tok kroz sva tri sloja.  
