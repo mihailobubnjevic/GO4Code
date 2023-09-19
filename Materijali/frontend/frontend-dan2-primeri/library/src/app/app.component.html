@@ -1,0 +1,5 @@
+
+<app-create-book (addBookEventEmitter)="onBookAdded($event)"></app-create-book>
+<div *ngFor="let bookElement of books">
+  <app-book [book]="bookElement"></app-book>
+</div>
