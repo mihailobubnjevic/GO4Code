@@ -1,0 +1,34 @@
+<div >
+  <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm.value)"  class="formDiv">
+    <h1>Register form: </h1>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput required  name="email" type="email" ngModel>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput required type="password" name="password" [maxlength]="8"  ngModel>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Gender</mat-label>
+      <mat-select name="gender" ngModel>
+        <mat-option *ngFor="let gender of genders" [value]="gender">{{gender}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-radio-group name="occupation" aria-label="occupation" ngModel>
+      <label>Occupation: </label>
+      <mat-radio-button value="employed">Employed</mat-radio-button>
+      <mat-radio-button value="student">Student</mat-radio-button>
+      <mat-radio-button value="other">Other</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-checkbox name="subscribed" ngModel>Subscribe to newsletter</mat-checkbox>
+
+    <button [disabled]="registerForm.invalid" type="submit" mat-raised-button color="accent">Register</button>
+  </form>
+</div>
+  
