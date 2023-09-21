@@ -1,0 +1,32 @@
+<div>
+    <form #createBookForm="ngForm" (ngSubmit)="onSubmit()"  class="formDiv">
+      <h1>Create a book: </h1>
+  
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput required type="text" name="title" [(ngModel)]="book.title" ngModel>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input matInput required type="text" name="description" [(ngModel)]="book.description" ngModel>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput required type="text" name="author" [(ngModel)]="book.author" ngModel>
+      </mat-form-field>
+
+      <button [disabled]="createBookForm.invalid" type="submit" mat-raised-button color="primary">Create</button>
+    </form>
+    <br>
+    <mat-divider></mat-divider>
+    <div>
+        <button mat-raised-button (click)="deleteById()" color="accent"> Delete book</button>
+        <mat-form-field>
+          <mat-label>Id to delete</mat-label>
+          <input matInput [(ngModel)]="idToDelete" required type="text">
+        </mat-form-field>
+    </div>
+</div>
+<app-book-preview [updateBooks]="updateBooks"></app-book-preview>
