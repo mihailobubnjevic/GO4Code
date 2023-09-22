@@ -1,0 +1,21 @@
+<div>
+  <div *ngIf="isLoading">
+    <mat-spinner></mat-spinner>
+  </div>
+    <button mat-flat-button  color="primary" (click)="getAllBooks()"> Load books</button>
+    <div *ngIf="books.length > 0">
+        <h2>All books</h2>
+        <div *ngFor="let book of books">
+          <h2>Title: {{book.title}}</h2>
+          <h3>Author: {{book.author}}</h3>
+          <p> Desc: {{book.description}}</p>
+        </div>
+      </div>
+    
+    
+    
+      <div *ngIf="!isLoading && books.length < 1">
+        <h2>No books to show</h2>
+        </div>
+    
+</div>

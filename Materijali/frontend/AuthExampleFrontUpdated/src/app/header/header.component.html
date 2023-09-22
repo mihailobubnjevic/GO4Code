@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <button mat-button *ngIf="isAuthenticated">
+    <a routerLink="/edit">Edit books</a>
+  </button>
+  <button mat-button>
+    <a routerLink='/books' >Books</a>
+  </button>
+  <span class="example-spacer"></span>
+  <button mat-button *ngIf="!isAuthenticated">
+    <a routerLink="/auth">Login/Signup</a>
+  </button>
+  <button mat-button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
+</mat-toolbar>
